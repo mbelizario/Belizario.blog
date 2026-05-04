@@ -1,5 +1,4 @@
 baseURL: "/"
-locale: en-us
 title: Belizario.blog
 theme: ["PaperMod"]
 defaultContentLanguage: pt
@@ -9,6 +8,7 @@ languages:
     languageName: "PT"
     weight: 1
     contentDir: content/pt
+    languageCode: pt-br
     menu:
       main:
         - identifier: search
@@ -19,6 +19,7 @@ languages:
     languageName: "EN"
     weight: 2
     contentDir: content/en
+    languageCode: en-us
     menu:
       main:
         - identifier: search
