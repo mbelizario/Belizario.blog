@@ -1,0 +1,8 @@
+baseURL: https://example.org/
+locale: en-us
+title: Belizario.blog
+theme: ["PaperMod"]
+defaultTheme: dark
+ShowToc: true
+TocOpen: true
+ShowBreadCrumbs: true
