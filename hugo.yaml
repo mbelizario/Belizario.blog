@@ -34,8 +34,8 @@ params:
   profileMode:
     enabled: false
   homeInfoParams: 
-    Title: "Belizario.blog" 
-    Content: "" 
+    Title: "Micael Belizário" 
+    Content: "Technical blog" 
   socialIcons: # optional 
     - name: "github" 
       url: "https://github.com/mbelizario" 
