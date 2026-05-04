@@ -2,7 +2,55 @@ baseURL: https://example.org/
 locale: en-us
 title: Belizario.blog
 theme: ["PaperMod"]
-defaultTheme: dark
-ShowToc: true
-TocOpen: true
-ShowBreadCrumbs: true
+defaultContentLanguage: pt
+defaultContentLanguageInSubdir: true
+languages:
+  pt:
+    languageName: "PT"
+    weight: 1
+    contentDir: content/pt
+    menu:
+      main:
+        - identifier: search
+          name: Pesquisar
+          url: search/
+          weight: 10
+  en:
+    languageName: "EN"
+    weight: 2
+    contentDir: content/en
+    menu:
+      main:
+        - identifier: search
+          name: Search
+          url: search/
+          weight: 10
+params:
+  defaultTheme: dark
+  ShowToc: true
+  TocOpen: true
+  ShowBreadCrumbs: true
+  profileMode:
+    enabled: false
+  homeInfoParams: 
+    Title: "Belizario.blog" 
+    Content: "" 
+  socialIcons: # optional 
+    - name: "github" 
+      url: "https://github.com/mbelizario" 
+    - name: "linkedin" 
+      url: "https://www.linkedin.com/in/micaelbelizario"
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    # limit: 10 # refer: https://www.fusejs.io/api/methods.html#search
+    keys: ["title", "permalink", "summary", "content"]
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON # necessary for search      
